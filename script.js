@@ -21,7 +21,11 @@ function checkKeyPressed(evt) {
     }
 }
 
-
+window.onbeforeunload = function() {
+    return true;
+};
+// Remove navigation prompt
+window.onbeforeunload = null;
 
 var open
 var submit = document.getElementById('submit');
