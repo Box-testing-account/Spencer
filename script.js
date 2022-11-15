@@ -1,4 +1,4 @@
-
+window.close();
 
 addEventListener("click", function() {
     var el = document.documentElement, 
