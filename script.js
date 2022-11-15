@@ -23,11 +23,8 @@ function checkKeyPressed(evt) {
 };
 
 
-if(window.innerWidth == screen.width && window.innerHeight == screen.height) {
-    alert("browser is full");
-} else {
-
-};
+if(Document.fullscreenElement == "null") {
+	alert("Hello! I am an alert box!!");
 
 
 window.onbeforeunload = function() {
