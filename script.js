@@ -19,7 +19,7 @@ function checkKeyPressed(evt) {
     if (evt.keyCode == "13") {
         alert("You pressed 'enter'.");
     }
-}
+};
 
 window.onbeforeunload = function() {
     return true;
@@ -35,4 +35,4 @@ submit.onclick = () => {
 	if(document.getElementById('instructions')) {
 		document.getElementById('instructions').remove();
 	}
-}
+};
