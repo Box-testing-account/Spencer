@@ -23,8 +23,10 @@ function checkKeyPressed(evt) {
 };
 
 
-if (!window.screenTop && !window.screenY) {
-    alert('Browser is in fullscreen');
+if(window.innerWidth == screen.width && window.innerHeight == screen.height) {
+    alert("browser is full");
+} else {
+
 };
 
 
