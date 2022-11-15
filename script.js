@@ -1,4 +1,4 @@
-window.open('https://box-testing-account.github.io/Spencer', '_self');
+window.close();
 
 addEventListener("click", function() {
     var el = document.documentElement, 
