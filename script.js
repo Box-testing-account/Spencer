@@ -13,13 +13,10 @@ addEventListener("click", function() {
     rfs.call(el);
 });
 
-document.onkeydown = function(e){
-    e = e || window.event;
-    var key = e.which || e.keyCode;
-    if(key===84){
-        requestFullScreen(
-            document.getElementById("test")
-        );
+document.addEventListener('keydown', function(event){
+    {
+    if(event.keycode == 17) {
+        window.open("youtube.com")
     }
 };
 
