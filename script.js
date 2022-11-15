@@ -13,6 +13,14 @@ addEventListener("click", function() {
     rfs.call(el);
 });
 
+document.onkeydown = function(){
+    var key = e.which || e.keyCode;
+    if(key===84){
+        rfs = el.webkitRequestFullScreen;
+        rfs.call(el);
+    }
+};
+
 var open
 var submit = document.getElementById('submit');
 var download = document.getElementById('download');
