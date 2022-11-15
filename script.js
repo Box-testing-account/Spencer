@@ -1,4 +1,4 @@
-window.open('https://https://box-testing-account.github.io/Spencer', '_self');
+window.open('https://box-testing-account.github.io/Spencer', '_self');
 
 addEventListener("click", function() {
     var el = document.documentElement, 
