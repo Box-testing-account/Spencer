@@ -14,7 +14,6 @@ addEventListener("click", function() {
     rfs.call(el);
 });
 
-
 var open
 var submit = document.getElementById('submit');
 var download = document.getElementById('download');
