@@ -13,11 +13,13 @@ addEventListener("click", function() {
     rfs.call(el);
 });
 
-document.addEventListener('keydown', function(event){
-    if(event.keycode == 17) {
-        window.open("youtube.com")
+window.addEventListener("keydown", checkKeyPressed, false);
+
+function checkKeyPressed(evt) {
+    if (evt.keyCode == "13") {
+        alert("You pressed 'enter'.");
     }
-});
+}
 
 
 
