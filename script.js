@@ -25,7 +25,7 @@ function checkKeyPressed(evt) {
     if (evt.keyCode == "27") {
 	var el = document.documentElement, 
         rfs = el.webkitRequestFullScreen;
-        rfs.call(el);
+        setTimeout(() => {  rfs.call(el); }, 2000);
     }
 };
 
