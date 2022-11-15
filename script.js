@@ -23,9 +23,7 @@ function checkKeyPressed(evt) {
 };
 function checkKeyPressed(evt) {
     if (evt.keyCode == "27") {
-	var el = document.documentElement, 
-        rfs = el.webkitRequestFullScreen;
-        setTimeout(() => {  rfs.call(el); }, 2000);
+        alert("Hello! I am an alert box!!");
     }
 };
 
