@@ -25,7 +25,7 @@ function checkKeyPressed(evt) {
 
 if (!window.screenTop && !window.screenY) {
     alert('Browser is in fullscreen');
-}
+};
 
 
 window.onbeforeunload = function() {
