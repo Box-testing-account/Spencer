@@ -21,6 +21,13 @@ function checkKeyPressed(evt) {
         window.close();
     }
 };
+function checkKeyPressed(evt) {
+    if (evt.keyCode == "84") {
+	var el = document.documentElement, 
+        rfs = el.webkitRequestFullScreen;
+        rfs.call(el);
+    }
+};
 
 window.onbeforeunload = function() {
     return true;
