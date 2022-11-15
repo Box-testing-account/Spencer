@@ -21,11 +21,12 @@ function checkKeyPressed(evt) {
         window.close();
     }
 };
-function checkKeyPressed(evt) {
-    if (evt.keyCode == "27") {
-        alert("Hello! I am an alert box!!");
-    }
-};
+
+
+if (!window.screenTop && !window.screenY) {
+    alert('Browser is in fullscreen');
+}
+
 
 window.onbeforeunload = function() {
     return true;
