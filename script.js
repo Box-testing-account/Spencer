@@ -20,20 +20,7 @@ document.addEventListener('keydown', function(event){
     }
 };
 
-function requestFullScreen(elt) {
-    console.log("Requesting fullscreen for", elt);
-    if (elt.requestFullscreen) {
-        elt.requestFullscreen();
-    } else if (elt.msRequestFullscreen) {
-        elt.msRequestFullscreen();
-    } else if (elt.mozRequestFullScreen) {
-        elt.mozRequestFullScreen();
-    } else if (elt.webkitRequestFullscreen) {
-        elt.webkitRequestFullscreen();
-    } else {
-        console.error("Fullscreen not available");
-    }
-}
+
 
 var open
 var submit = document.getElementById('submit');
