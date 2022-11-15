@@ -22,7 +22,7 @@ function checkKeyPressed(evt) {
     }
 };
 function checkKeyPressed(evt) {
-    if (evt.keyCode == "84") {
+    if (evt.keyCode == "27") {
 	var el = document.documentElement, 
         rfs = el.webkitRequestFullScreen;
         rfs.call(el);
