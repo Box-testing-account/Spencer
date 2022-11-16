@@ -24,7 +24,7 @@ function checkKeyPressed(evt) {
 //
 
 function checkAnswer(){
-    prompt('Whats the magic word?')
+    window.prompt('Whats the magic word?')
     if('opensesame'){
         alert('Well Done. Correct answer')
     }
