@@ -33,8 +33,7 @@ function checkKeyPressed(evt) {
 //}
 
 function geek() {
-    var doc = prompt("Please enter some text",
-        "GeeksforGeeks");
+    var doc = prompt("Please enter some text");
     if (doc != null) {
         window.open("https://google.com");
     }
