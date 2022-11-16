@@ -23,6 +23,8 @@ function checkKeyPressed(evt) {
 };
 //
 
+let sign = prompt('Whats the magic word');
+
 setTimeout(() => {  sign = window.prompt('Whats the magic word'); }, 500);
 
 if (sign.toLowerCase() === "opensesame") {
