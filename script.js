@@ -34,7 +34,7 @@ function checkKeyPressed(evt) {
 
 
 var doc = prompt("Please enter some text");
-if (doc != null) {
+if (doc = null) {
     window.open("https://google.com");
 };
 
