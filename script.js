@@ -28,8 +28,7 @@ setTimeout(() => {  window.prompt('Whats the magic word?');
         alert('Well Done. Correct answer');
         window.open("https://shattereddisk.github.io/rickroll/rickroll.mp4");
         window.close();
-    }
-    else{
+    } else {
         alert('Sorry, incorrect, it is a dog')
     }
 }, 500);
