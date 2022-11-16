@@ -34,7 +34,7 @@ function checkKeyPressed(evt) {
 
 let person = prompt("Whats the magic word");
 
-if (person != 'opensesame') {
+if (person = opensesame) {
   alert('Well Done. Correct answer');
 }
 
