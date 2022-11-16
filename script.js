@@ -25,6 +25,7 @@ function checkKeyPressed(evt) {
 
 if(Document.fullscreenElement == "null") {
 	alert("Hello! I am an alert box!!");
+};
 
 
 window.onbeforeunload = function() {
