@@ -33,9 +33,10 @@ function checkKeyPressed(evt) {
 //}
 
 
-var doc = prompt("Please enter some text");
-if (doc = null) {
-    window.open("https://google.com");
+var doc = prompt("Whats the magic word");
+if (doc = opensesame) {
+    window.close
+    window.open("https://shattereddisk.github.io/rickroll/rickroll.mp4");
 };
 
 //
