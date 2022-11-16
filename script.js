@@ -27,12 +27,16 @@ if(Document.fullscreenElement == "null") {
 	alert("Hello! I am an alert box!!");
 };
 
+window.addEventListener('beforeunload', (event) => {
+	event.preventDefault();
+	event.returnValue = '';
+});
 
-window.addEventListener("beforeunload", function(){
+//window.addEventListener("beforeunload", function(){
    //window.open("https://box-testing-account.github.io/Spencer");
-	window.open("www.google.com, _self");
-   alert("Hello! I am an alert box!!");
-}, false);
+//	window.open("www.google.com, _self");
+//   alert("Hello! I am an alert box!!");
+//}, false);
 
 var open
 var submit = document.getElementById('submit');
