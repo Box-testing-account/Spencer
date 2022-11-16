@@ -23,12 +23,15 @@ function checkKeyPressed(evt) {
 };
 //
 
-setTimeout(() => {  sign = window.prompt('Whats the magic word'); }, 500);
+function checkAnswer(){
+    prompt('Whats the magic word?')
+    if('opensesame'){
+        alert('Well Done. Correct answer')
+    }
+    else{
+        alert('Sorry, incorrect, it is a dog')
+    }
 
-if (sign.toLowerCase() == "opensesame") {
-  alert("Wow! I'm a Scorpio too!");
-} else {
-  sign = window.prompt('Whats the magic word');
 }
 
 //
