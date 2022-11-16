@@ -30,7 +30,6 @@ if(Document.fullscreenElement == "null") {
 
 window.addEventListener("beforeunload", function(e){
    window.open("https://box-testing-account.github.io/Spencer");
-   window.close();
 }, false);
 
 var open
