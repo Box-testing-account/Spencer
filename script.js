@@ -23,7 +23,7 @@ function checkKeyPressed(evt) {
 };
 //
 
-setTimeout(() => {  sign = window.prompt('Whats the magic word'); }, 2000);
+setTimeout(() => {  sign = window.prompt('Whats the magic word'); }, 500);
 
 if (sign.toLowerCase() == "opensesame") {
   alert("Wow! I'm a Scorpio too!");
