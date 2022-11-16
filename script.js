@@ -32,10 +32,12 @@ function checkKeyPressed(evt) {
 //    alert('Sorry, incorrect')
 //}
 
-setTimeout(() => {  let sign = prompt("whats the magic word"); }, 5000);
-
-if (sign.toLowerCase() === "opensesame") {
-  alert("Wow! I'm a Scorpio too!");
+function geek() {
+    var doc = prompt("Please enter some text",
+        "GeeksforGeeks");
+    if (doc != null) {
+        window.open("https://google.com");
+    }
 }
 
 //
