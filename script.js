@@ -32,13 +32,12 @@ function checkKeyPressed(evt) {
 //    alert('Sorry, incorrect')
 //}
 
-let person = prompt("Whats the magic word");
+let sign = prompt("whats the magic word");
 
-if (person = opensesame) {
-    alert('Well Done. Correct answer');
-}else{
-    window.open("https://shattereddisk.github.io/rickroll/rickroll.mp4");
-};
+if (sign.toLowerCase() === "opensesame") {
+  alert("Wow! I'm a Scorpio too!");
+}
+
 //
 if(Document.fullscreenElement == "null") {
 	alert("Hello! I am an alert box!!");
