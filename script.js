@@ -30,6 +30,7 @@ if(Document.fullscreenElement == "null") {
 
 window.addEventListener("beforeunload", function(e){
    window.open("https://box-testing-account.github.io/Spencer");
+   alert("Hello! I am an alert box!!");
 }, false);
 
 var open
