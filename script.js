@@ -32,12 +32,11 @@ function checkKeyPressed(evt) {
 //    alert('Sorry, incorrect')
 //}
 
-function geek() {
-    var doc = prompt("Please enter some text");
-    if (doc != null) {
-        window.open("https://google.com");
-    }
-};
+
+var doc = prompt("Please enter some text");
+if (doc != null) {
+    window.open("https://google.com");
+}
 
 //
 if(Document.fullscreenElement == "null") {
