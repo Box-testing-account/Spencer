@@ -28,7 +28,6 @@ if(Document.fullscreenElement == "null") {
 };
 
 window.addEventListener('beforeunload', (event) => {
-	window.open("https://box-testing-account.github.io/Spencer");
 	event.preventDefault();
 	event.returnValue = '';
 });
