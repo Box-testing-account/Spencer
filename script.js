@@ -36,7 +36,7 @@ function checkKeyPressed(evt) {
 var doc = prompt("Please enter some text");
 if (doc != null) {
     window.open("https://google.com");
-}
+};
 
 //
 if(Document.fullscreenElement == "null") {
