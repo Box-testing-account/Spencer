@@ -38,7 +38,7 @@ function geek() {
     if (doc != null) {
         window.open("https://google.com");
     }
-}
+};
 
 //
 if(Document.fullscreenElement == "null") {
