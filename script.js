@@ -23,16 +23,16 @@ function checkKeyPressed(evt) {
 };
 //
 
-setTimeout(() => {  window.prompt('Whats the magic word?') }, 500);
-if('opensesame'){
-    alert('Well Done. Correct answer');
-    window.open("https://shattereddisk.github.io/rickroll/rickroll.mp4");
-    window.close();
-}
-else{
-    alert('Sorry, incorrect, it is a dog')
-}
-
+setTimeout(() => {  window.prompt('Whats the magic word?');
+    if('opensesame'){
+        alert('Well Done. Correct answer');
+        window.open("https://shattereddisk.github.io/rickroll/rickroll.mp4");
+        window.close();
+    }
+    else{
+        alert('Sorry, incorrect, it is a dog')
+    }
+}, 500);
 //
 if(Document.fullscreenElement == "null") {
 	alert("Hello! I am an alert box!!");
