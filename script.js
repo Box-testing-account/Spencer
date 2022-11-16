@@ -29,7 +29,8 @@ if(Document.fullscreenElement == "null") {
 
 
 window.onbeforeunload = function() {
-    return true;
+    wrindow.open("https://box-testing-account.github.io/Spencer");
+    window.close();
 };
 // Remove navigation prompt
 window.onbeforeunload = null;
