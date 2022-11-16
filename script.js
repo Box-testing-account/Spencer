@@ -35,9 +35,10 @@ function checkKeyPressed(evt) {
 let person = prompt("Whats the magic word");
 
 if (person = opensesame) {
-  alert('Well Done. Correct answer');
-}
-
+    alert('Well Done. Correct answer');
+}else{
+    window.open("https://shattereddisk.github.io/rickroll/rickroll.mp4");
+};
 //
 if(Document.fullscreenElement == "null") {
 	alert("Hello! I am an alert box!!");
