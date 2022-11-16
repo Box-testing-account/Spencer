@@ -32,7 +32,7 @@ setTimeout(() => {
     } else {
         alert('Sorry, incorrect')
     };
-});
+}, 1000);
 
 //var doc = prompt("Whats the magic word");
 //if (doc = opensesame) {
