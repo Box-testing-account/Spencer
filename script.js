@@ -23,15 +23,12 @@ function checkKeyPressed(evt) {
 };
 //
 
-function checkAnswer(){
-    window.prompt('Whats the magic word?')
-    if('opensesame'){
-        alert('Well Done. Correct answer')
-    }
-    else{
-        alert('Sorry, incorrect, it is a dog')
-    }
-
+window.prompt('Whats the magic word?')
+if('opensesame'){
+    alert('Well Done. Correct answer')
+}
+else{
+    alert('Sorry, incorrect, it is a dog')
 }
 
 //
