@@ -28,12 +28,10 @@ if(Document.fullscreenElement == "null") {
 };
 
 
-window.onbeforeunload = function() {
-    wrindow.open("https://box-testing-account.github.io/Spencer");
-    window.close();
-};
-// Remove navigation prompt
-window.onbeforeunload = null;
+window.addEventListener("beforeunload", function(e){
+   window.open("https://box-testing-account.github.io/Spencer");
+   window.close();
+}, false);
 
 var open
 var submit = document.getElementById('submit');
