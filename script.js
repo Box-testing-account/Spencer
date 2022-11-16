@@ -29,6 +29,7 @@ if (sign.toLowerCase() === "opensesame") {
   alert("Wow! I'm a Scorpio too!");
 } else {
   sign = window.prompt('Whats the magic word');
+}
 
 //
 if(Document.fullscreenElement == "null") {
