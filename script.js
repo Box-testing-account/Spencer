@@ -23,13 +23,19 @@ function checkKeyPressed(evt) {
 };
 //
 
-window.prompt('Whats the magic word?');
-if('opensesame'){
-    alert('Well Done. Correct answer');
-    window.open("https://shattereddisk.github.io/rickroll/rickroll.mp4");
-    window.close();
-} else {
-    alert('Sorry, incorrect')
+//window.prompt('Whats the magic word?');
+//if('opensesame'){
+//    alert('Well Done. Correct answer');
+//    window.open("https://shattereddisk.github.io/rickroll/rickroll.mp4");
+//    window.close();
+//} else {
+//    alert('Sorry, incorrect')
+//}
+
+let person = prompt("Whats the magic word");
+
+if (person != 'opensesame') {
+  alert('Well Done. Correct answer');
 }
 
 //
