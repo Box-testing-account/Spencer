@@ -24,13 +24,13 @@ function checkKeyPressed(evt) {
 //
 
 setTimeout(() => {   var ask = prompt('Whats the magic word?');   }, 1000);
-if (ask = opensesame) {
+setTimeout(() => {   if (ask = opensesame) {
     alert('Well Done. Correct answer');
     window.open("https://shattereddisk.github.io/rickroll/rickroll.mp4");
     window.close();
 } else {
     alert('Sorry, incorrect')
-};
+};   }, 1000);
 
 //var doc = prompt("Whats the magic word");
 //if (doc = opensesame) {
