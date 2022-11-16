@@ -23,11 +23,9 @@ function checkKeyPressed(evt) {
 };
 //
 
-let sign = prompt('Whats the magic word');
-
 setTimeout(() => {  sign = window.prompt('Whats the magic word'); }, 500);
 
-if (sign.toLowerCase() === "opensesame") {
+if (sign.toLowerCase() == "opensesame") {
   alert("Wow! I'm a Scorpio too!");
 } else {
   sign = window.prompt('Whats the magic word');
