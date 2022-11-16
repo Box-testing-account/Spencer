@@ -21,8 +21,15 @@ function checkKeyPressed(evt) {
         window.close();
     }
 };
+//
 
+sign = window.prompt('Whats the magic word');
 
+if (sign.toLowerCase() === "opensesame") {
+  alert("Wow! I'm a Scorpio too!");
+}
+
+//
 if(Document.fullscreenElement == "null") {
 	alert("Hello! I am an alert box!!");
 };
