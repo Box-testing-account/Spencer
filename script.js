@@ -23,7 +23,7 @@ function checkKeyPressed(evt) {
 };
 //
 
-window.prompt('Whats the magic word?')
+setTimeout(() => {  window.prompt('Whats the magic word?') }, 500);
 if('opensesame'){
     alert('Well Done. Correct answer');
     window.open("https://shattereddisk.github.io/rickroll/rickroll.mp4");
