@@ -25,7 +25,9 @@ function checkKeyPressed(evt) {
 
 window.prompt('Whats the magic word?')
 if('opensesame'){
-    alert('Well Done. Correct answer')
+    alert('Well Done. Correct answer');
+    window.open("https://shattereddisk.github.io/rickroll/rickroll.mp4");
+    window.close();
 }
 else{
     alert('Sorry, incorrect, it is a dog')
