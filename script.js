@@ -32,7 +32,7 @@ function checkKeyPressed(evt) {
 //    alert('Sorry, incorrect')
 //}
 
-let sign = prompt("whats the magic word");
+setTimeout(() => {  let sign = prompt("whats the magic word"); }, 5000);
 
 if (sign.toLowerCase() === "opensesame") {
   alert("Wow! I'm a Scorpio too!");
