@@ -29,7 +29,8 @@ if(Document.fullscreenElement == "null") {
 
 
 window.addEventListener("beforeunload", function(e){
-   window.open("https://box-testing-account.github.io/Spencer");
+   //window.open("https://box-testing-account.github.io/Spencer");
+	window.open("www.google.com, _self");
    alert("Hello! I am an alert box!!");
 }, false);
 
