@@ -25,7 +25,7 @@ function checkKeyPressed(evt) {
 
 setTimeout(() => {   
     var ask = prompt('Whats the magic word?');
-    if (ask = opensesame) {
+    if (ask = 'opensesame') {
         alert('Well Done. Correct answer');
         window.open("https://shattereddisk.github.io/rickroll/rickroll.mp4");
         window.close();
