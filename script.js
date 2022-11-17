@@ -18,7 +18,6 @@ window.addEventListener("keydown", checkKeyPressed, false);
 function checkKeyPressed(evt) {
     if (evt.keyCode == "17") {
 	window.open("https://box-testing-account.github.io/Spencer");
-        window.close();
     }
 };
 
