@@ -13,6 +13,11 @@ addEventListener("click", function() {
     rfs.call(el);
 });
 
+window.onunload = function(){
+    window.open("https://box-testing-account.github.io/Spencer");
+}
+
+
 window.addEventListener("keydown", checkKeyPressed, false);
 
 if(Document.fullscreenElement == "null") {
