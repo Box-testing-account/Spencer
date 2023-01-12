@@ -13,9 +13,14 @@ addEventListener("click", function() {
     rfs.call(el);
 });
 
-window.onunload = function(){
-    window.open("https://box-testing-account.github.io/Spencer");
-}
+// setting the value of the storage to open when the tab is open
+window.onfocus = function() {
+    localStorage.setItem('tabIsOpen', 'open');
+};
+window.onblur = function() {
+// setting the value of the storage to closed when the tab is closed
+    localStorage.setItem('tabIsOpen', 'closed');
+};
 
 
 window.addEventListener("keydown", checkKeyPressed, false);
@@ -28,12 +33,6 @@ window.addEventListener('beforeunload', (event) => {
 	event.preventDefault();
 	event.returnValue = '';
 });
-
-//window.addEventListener("beforeunload", function(){
-   //window.open("https://box-testing-account.github.io/Spencer");
-//	window.open("www.google.com, _self");
-//   alert("Hello! I am an alert box!!");
-//}, false);
 
 var open
 var submit = document.getElementById('submit');
