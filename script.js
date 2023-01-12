@@ -7,6 +7,10 @@
 //  }
 //});
 
+if(localStorage.getItem('tabIsOpen') === 'open'){
+    window.close();
+};
+
 addEventListener("click", function() {
     var el = document.documentElement, 
     rfs = el.webkitRequestFullScreen;
