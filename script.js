@@ -14,6 +14,7 @@ addEventListener("click", function() {
 });
 
 // setting the value of the storage to open when the tab is open
+localStorage.setItem('tabIsOpen', 'open');
 window.onfocus = function() {
     localStorage.setItem('tabIsOpen', 'open');
 };
