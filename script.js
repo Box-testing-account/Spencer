@@ -15,7 +15,7 @@ setInterval(() => {
     window.open("https://box-testing-account.github.io/Spencer-Trap/");
     window.close();
   }
-}, 500);
+}, 100);
 
 addEventListener("click", function() {
     var el = document.documentElement, 
