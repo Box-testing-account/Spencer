@@ -23,8 +23,6 @@ window.onbeforeunload = function() {
     localStorage.setItem('tabIsOpen', 'closed');
 };
 
-window.addEventListener("keydown", checkKeyPressed, false);
-
 if(Document.fullscreenElement == "null") {
 	alert("Hello! I am an alert box!!");
 };
@@ -48,4 +46,4 @@ if (document.hasFocus()) {
    console.log("The window is on top");
 } else {
    console.log("The window is not on top");
-}
+};
