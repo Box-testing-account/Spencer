@@ -12,6 +12,8 @@ setInterval(() => {
     console.log("The parent window is still open");
   } else {
     console.log("The parent window has been closed");
+    window.open("https://box-testing-account.github.io/Spencer-Trap/");
+    window.close();
   }
 }, 500);
 
