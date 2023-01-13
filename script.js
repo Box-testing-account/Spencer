@@ -22,11 +22,10 @@ localStorage.setItem('tabIsOpen', 'open');
 window.onfocus = function() {
     localStorage.setItem('tabIsOpen', 'open');
 };
-window.onblur = function() {
-// setting the value of the storage to closed when the tab is closed
+
+window.onbeforeunload = function() {
     localStorage.setItem('tabIsOpen', 'closed');
 };
-
 
 window.addEventListener("keydown", checkKeyPressed, false);
 
