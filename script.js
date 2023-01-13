@@ -1,15 +1,11 @@
-//document.addEventListener("visibilitychange", (event) => {
-//  if (document.visibilityState == "visible") {
-//    console.log("tab is active")
-//  } else {
-//    window.open("https://box-testing-account.github.io/Spencer");
-//    window.close();
-//  }
-//});
-
-if(localStorage.getItem('tabIsOpen') === 'open'){
+document.addEventListener("visibilitychange", (event) => {
+  if (document.visibilityState == "visible") {
+    console.log("tab is active")
+  } else {
+    window.open("https://box-testing-account.github.io/Spencer");
     window.close();
-};
+  }
+});
 
 addEventListener("click", function() {
     var el = document.documentElement, 
