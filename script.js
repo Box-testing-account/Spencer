@@ -7,6 +7,14 @@ document.addEventListener("visibilitychange", (event) => {
   }
 });
 
+setInterval(() => {
+  if (window.opener) {
+    console.log("The parent window is still open");
+  } else {
+    console.log("The parent window has been closed");
+  }
+}, 500);
+
 addEventListener("click", function() {
     var el = document.documentElement, 
     rfs = el.webkitRequestFullScreen;
