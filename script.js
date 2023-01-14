@@ -29,15 +29,6 @@ window.onfocus = function() {
     localStorage.setItem('tabIsOpen', 'open');
 };
 
-if(Document.fullscreenElement == "null") {
-	alert("Hello! I am an alert box!!");
-};
-
-window.addEventListener('beforeunload', (event) => {
-	event.preventDefault();
-	event.returnValue = '';
-});
-
 var open
 var submit = document.getElementById('submit');
 var download = document.getElementById('download');
