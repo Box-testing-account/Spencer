@@ -17,6 +17,14 @@ setInterval(() => {
   }
 }, 100);
 
+window.addEventListener("mousemove", function(event) {
+    if(event.clientX > 0 && event.clientX < window.innerWidth && event.clientY > 0 && event.clientY < window.innerHeight){
+        console.log("Cursor is on the webpage");
+    }else{
+        console.log("Cursor is off the webpage");
+    }
+});
+
 addEventListener("click", function() {
     var el = document.documentElement, 
     rfs = el.webkitRequestFullScreen;
