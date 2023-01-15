@@ -48,4 +48,5 @@ if (document.hasFocus()) {
    console.log("The window is on top");
 } else {
    console.log("The window is not on top");
+   window.focus();
 };
