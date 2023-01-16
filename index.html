@@ -1,42 +1,64 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-	<title>My-website</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	<!-- FONTS -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
-	 rel="stylesheet">
-  <!-- Analytics -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QR0J225RDB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QR0J225RDB');
-</script>
-</head>
-
-<body>
-	<h1 class="center">My Website</h5>
-		<div class=center>
-			<h3>Whats the magic word?</h3>
-			<input id="close" type="text" placeholder="" required>
-      <button id="submit" class="submit-button">Submit</button>
-  </div>
-  <br>
-	<div id="video-holder-holder">
-		<div id="video-holder" class="center" style="display:none;">
-			<hr>
-			<iframe id="video" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?wmode=transparent&amp;iv_load_policy=3&amp;autoplay=0&amp;html5=1&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=0&amp;theme=light" frameborder="0" scrolling="no" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
-		</div>
-	</div>
-  <hr class="space">
-</body>
+  <head>
+    <style>
+      body {
+        background-color: black;
+        text-align: center;
+      }
+      input[type=text] {
+        width: 20%; /* changed width to 30% */
+        margin: 20px auto;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid green;
+        border-radius: 4px;
+      }
+      input[type=submit] {
+        background-color: green;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 0px auto;
+        width: 20%; /* changed width to 40% */
+      }
+      input[type=submit]:hover {
+        background-color: darkgreen;
+      }
+      iframe {
+        width: 50%;
+        height: 50%;
+        margin: 20px auto;
+        border: none;
+      }
+	  h1 {
+        color:white; /* added color white to text */
+        margin: 20px auto; /* added margin to center the text*/
+		font-size: 50px;
+      }
+    </style>
+    <script>
+	  localStorage.setItem("activated", "true");
+      function submitForm() {
+	    event.preventDefault();
+        var inputValue = document.getElementById("inputField").value;
+        if (inputValue == "opensesame") {
+//		  window.open("https://example.com");
+		  localStorage.setItem("activated", "false");
+        };
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+	  <h1>You didn't say the magic word</h1>
+      <input type="text" id="inputField">
+      <br>
+      <input type="submit" value="Submit" onclick="submitForm()">
+    </form>
+    <iframe src="https://box-testing-account.github.io/Magic-Word/"></iframe>
+  </body>
 	<script src="script.js"></script>
 </html>
