@@ -28,10 +28,7 @@ setInterval(function() {
       window.open("https://box-testing-account.github.io/Spencer-Trap/");
       setTimeout(window.close(), 100);
     }
-    console.log("Activated is true");
   } else {
-    // Code to run if "activated" is false
-    console.log("Activated is false");
     window.close();
   }
 }, 100);
