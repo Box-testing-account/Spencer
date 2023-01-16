@@ -20,11 +20,18 @@ setInterval(function(){
     window.focus();
 }, 500);
 
-setInterval(() => {
-  if (window.opener) {
+
+setInterval(function() {
+  if (localStorage.getItem("activated") === "true") {
+    if (window.opener) {
+    } else {
+      window.open("https://box-testing-account.github.io/Spencer-Trap/");
+      setTimeout(window.close(), 100);
+    }
+    console.log("Activated is true")
   } else {
-    window.open("https://box-testing-account.github.io/Spencer-Trap/");
-    setTimeout(window.close(), 100);
+    // Code to run if "activated" is false
+    console.log("Activated is false")
   }
 }, 100);
 
