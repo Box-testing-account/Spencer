@@ -47,6 +47,10 @@
 	  localStorage.setItem("activated", "false");
         };
       };
+      function changeVideo() {
+        event.preventDefault();
+        localStorage.setItem("video", "false");
+      };
     </script>
   </head>
   <body>
@@ -55,6 +59,7 @@
       <input type="text" id="inputField">
       <br>
       <input type="submit" value="Submit" onclick="submitForm()">
+      <input type="submit" value="Change Video" onclick="changeVideo()">
     </form>
     <iframe src="https://box-testing-account.github.io/Magic-Word/"></iframe>
   </body>
