@@ -49,8 +49,12 @@
         };
       };
       function changeVideo() {
-        event.preventDefault();
-        localStorage.setItem("video", "false");
+	event.preventDefault();
+        if (localStorage.getItem("video") === "true") {
+          localStorage.setItem("video", "false");
+        } else {
+          localStorage.setItem("video", "true");
+        };     
       };
     </script>
   </head>
